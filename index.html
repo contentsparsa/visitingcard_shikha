@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akash S</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+color:white;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:20px;
+width:340px;
+text-align:center;
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+
+.logo{
+width: 150px;px;
+margin:0 auto 10px;
+display:block;
+}
+
+.profile{
+width:110px;
+height:110px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid white;
+margin-top:10px;
+}
+
+h2{
+margin:10px 0 5px 0;
+}
+
+.title{
+color:#94a3b8;
+margin-bottom:20px;
+}
+
+.btn{
+display:block;
+text-decoration:none;
+padding:12px;
+margin:8px 0;
+border-radius:10px;
+background:#2563eb;
+color:white;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#1d4ed8;
+}
+
+.save{
+background:#16a34a;
+}
+
+.save:hover{
+background:#15803d;
+}
+
+.social{
+margin-top:15px;
+}
+
+.social a{
+color:white;
+font-size:20px;
+margin:0 10px;
+}
+
+.social a:hover{
+color:#38bdf8;
+}
+
+</style>
+
+<script>
+function saveContact() {
+
+const vcard = `BEGIN:VCARD
+VERSION:3.0
+N:Nnarula;Shikha;;
+FN:Shikha Narula
+ORG:Sparsa Digital Pvt Ltd
+TITLE:Co-Founder
+TEL;TYPE=CELL:++91 9811131058
+EMAIL:akash@sparsatv.in
+URL:https://sparsadigital.in
+END:VCARD`;
+
+const blob = new Blob([vcard], { type: 'text/vcard' });
+const url = URL.createObjectURL(blob);
+
+window.location.href = url;
+
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="logo.png" class="logo">
+
+<img src="profile.png" class="profile">
+
+<h2>Akash S</h2>
+<div class="title">Business Development Manager</div>
+
+<a class="btn save" href="contact.vcf">Save Contact</a>
+
+<a class="btn" href="tel:+917428134229">Call</a>
+
+<a class="btn" href="https://wa.me/917428134229">WhatsApp</a>
+
+<a class="btn" href="mailto:akash@sparsatv.in">Email</a>
+
+<a class="btn" href="https://sparsadigital.in">Visit Website</a>
+
+<a class="btn" href="https://maps.app.goo.gl/R4wK2kdHJzCmU52w9">Open Location</a>
+
+<div class="social">
+
+<a href="https://www.linkedin.com/company/sparsa-digital-pvt-ltd-/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+<a href="https://www.instagram.com/sparsadigital/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/p/Sparsa-Digital-Private-Limited-100064109044725/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+<a href="https://www.youtube.com/@sparsadigital3335" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
